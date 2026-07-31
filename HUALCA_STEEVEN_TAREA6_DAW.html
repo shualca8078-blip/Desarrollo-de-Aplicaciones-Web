@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca - Microservicios</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Sistema de Biblioteca</h1>
+
+    <!-- ========================= -->
+    <!-- USUARIOS -->
+    <!-- ========================= -->
+
+    <section>
+
+        <h2>Usuarios</h2>
+
+        <input type="text" id="nombre" placeholder="Nombre">
+        <input type="email" id="correo" placeholder="Correo">
+        <input type="text" id="telefono" placeholder="Teléfono">
+
+        <button onclick="registrarUsuario()">
+            Registrar Usuario
+        </button>
+
+        <button onclick="listarUsuarios()">
+            Ver Usuarios
+        </button>
+
+        <div id="usuarios"></div>
+
+    </section>
+
+    <hr>
+
+    <!-- ========================= -->
+    <!-- LIBROS -->
+    <!-- ========================= -->
+
+    <section>
+
+        <h2>Libros</h2>
+
+        <input type="text" id="titulo" placeholder="Título">
+        <input type="text" id="autor" placeholder="Autor">
+        <input type="text" id="isbn" placeholder="ISBN">
+        <input type="text" id="categoria" placeholder="Categoría">
+
+        <button onclick="registrarLibro()">
+            Registrar Libro
+        </button>
+
+        <button onclick="listarLibros()">
+            Ver Libros
+        </button>
+
+        <div id="libros"></div>
+
+    </section>
+
+    <hr>
+
+    <!-- ========================= -->
+    <!-- PRESTAMOS -->
+    <!-- ========================= -->
+
+    <section>
+
+        <h2>Préstamos</h2>
+
+        <input type="number" id="usuario_id" placeholder="ID Usuario">
+        <input type="number" id="libro_id" placeholder="ID Libro">
+        <input type="date" id="fecha_prestamo">
+        <input type="date" id="fecha_devolucion">
+
+        <button onclick="registrarPrestamo()">
+            Registrar Préstamo
+        </button>
+
+        <button onclick="listarPrestamos()">
+            Ver Historial
+        </button>
+
+        <div id="prestamos"></div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
